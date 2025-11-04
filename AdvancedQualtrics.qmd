@@ -26,6 +26,12 @@ editor:
     wrap: 72
 ---
 
+## Access These Slides
+
+<br>
+
+[![](docs/images/slideqr.png){fig-align="center"}](https://davidbrocker.github.io/AdvancedQualtricsFSC/AdvancedQualtrics.html#/title-slide)
+
 ## **Welcome & Setup**
 
 This workshop assumes you’ve used Qualtrics before, but want to move
@@ -218,6 +224,7 @@ beyond basic survey design to implement `logic`, `data embedding`, and
 <a href="mailto:brockda@farmingdale.edu?subject=Qualtrics Workshop" target=
 _blank"> {{< fa envelope size=5x >}} </a>
 :::
+
 <br>
 
 ![Feedback for Today's Event!](docs/images/qrcode.png){.qr
