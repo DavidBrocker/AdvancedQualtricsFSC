@@ -196,3 +196,15 @@ $selected-text-color: $highlight;
 .reveal .footer > * {
 	color: #fff;
 }
+
+figcaption {
+  background-color: black;
+  color: white;
+  padding: 2px;
+  text-align: center;
+}
+
+figure, figcaption:hover {
+  color: #b22222; /* or your accent */
+  transform: scale(1.2);
+}

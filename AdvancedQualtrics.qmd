@@ -181,19 +181,44 @@ beyond basic survey design to implement `logic`, `data embedding`, and
 | Embedded Data | Track learning outcomes | Record experimental variables |
 | Scoring       | Auto-grading            | Scale computation             |
 
+## What Else is There?
+
+### Things We Didn't Get To
+
+::::: columns
+::: {.column width="50%"}
+-   Unique Questions Types
+
+    -   Heatmap, Hot Spot, Highlight
+
+-   Post-Survey Messages
+
+-   Email Triggers
+
+-   Data Cleaning
+:::
+
+::: {.column width="50%"}
+-   Thank You Emails
+
+-   Password Protection
+
+-   Referral Website URL
+
+-   SONA Linking
+:::
+:::::
+
 ## **Wrap-Up & Resources**
 
 ::: container
-{{< fa brands github size=5x title="GitHub Repository" >}}
+<a href="https://github.com/DavidBrocker/AdvancedQualtricsFSC/tree/main" target="_blank">
+{{< fa brands github size=5x title="GitHub Repository" >}} </a>
 
-{{< fa comments size=5x >}}
-
-{{< fa file size=5x >}}
-
-{{< fa envelope size=5x >}}
+<a href="mailto:brockda@farmingdale.edu?subject=Qualtrics Workshop" target=
+_blank"> {{< fa envelope size=5x >}} </a>
 :::
+<br>
 
--   [Qualtrics
-    Documentation](https://www.qualtrics.com/support/survey-platform/getting-started/qualtrics-topics-a-z/)
-
--   Feedback QR code (naturally, using a Qualtrics survey!)
+![Feedback for Today's Event!](docs/images/qrcode.png){.qr
+style="border: 1px solid black;" fig-align="center"}
