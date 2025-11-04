@@ -1,0 +1,199 @@
+---
+title: "Beyond Surveys: Using Qualtrics for Teaching and Research"
+author: "Dave Brocker"
+subtitle: "Faculty Center Workshop, Nov. 4, 2025"
+footer: "Advanced Qualtrics for Research and Teaching"
+institute: "Farmingdale State College"
+execute:
+  echo: true
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1600
+    height: 900
+    scrollable: true
+    menu: false
+    incremental: true   
+    transition: fade
+    touch: true
+    lightbox: true
+    code-fold: true
+    title-slide-attributes: 
+      data-background-color: "#2A9D8F"
+
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## **Welcome & Setup**
+
+This workshop assumes you’ve used Qualtrics before, but want to move
+beyond basic survey design to implement `logic`, `data embedding`, and
+`custom scripting`. Specifically, we will cover:
+
+-   Content Validation
+
+-   Piping Text
+
+-   Embedding Data
+
+-   Survey Flow
+
+-   Custom CSS, HTML, and Javascript
+
+## **Welcome & Setup**
+
+-   **Content Validation**: Ensure that only certain values are
+    'allowed' and recorded
+
+-   **Piping Text**: Pass previous and nuanced values into later
+    questions
+
+-   **Survey Flow**: Add randomization, branching, and embedded data
+    into your survey workflow
+
+-   **Embedding Data**: Create custom variables that can be used for
+    validation, or as logic requirements
+
+-   **Custom** `CSS`, `HTML,` **and** `Javascript:`Fully customize your
+    survey
+
+# **Part I : Teaching Applications: Enhancing Engagement & Feedback** {background-color="#F4A261" data-background-color="#F4A261" style="color: white;"}
+
+## Teaching Applications {.teaching-card}
+
+### Content Validation
+
+-   Create criteria for 'successful' answer attempts
+
+-   Lock-In Participants After Withdrawing Consent
+
+-   Restrict Numeric, Email, and Text Responses
+
+-   Use Regular Expressions
+
+## Live-Navigation Guide {.teaching-card}
+
+### Behind the Scenes!
+
+![](images/sf1.png) ![](images/sf2.png) ![](images/sf3.png)
+
+## Content Validation {.teaching-card}
+
+```{=html}
+<iframe class = slide-deck src = "https://farmingdale.qualtrics.com/jfe/form/SV_cLJzrmBSa6jmegK?block_show=cv" width = 800px height = 800px></iframe>
+```
+
+## Teaching Applications {.teaching-card}
+
+### Text Piping
+
+-   Personalized feedback: “Hi \[Name\], your score was \[Score\],
+    here’s what that means.”
+
+-   When asked for your favorite song, you said \[Song\]. Can you tell
+    me what the song means to you?
+
+## Text Piping {.teaching-card}
+
+```{=html}
+<iframe class = slide-deck src = "https://farmingdale.qualtrics.com/jfe/form/SV_cLJzrmBSa6jmegK?block_show=pipe" width = 800px height = 800px></iframe>
+```
+
+## Teaching Applications {.teaching-card}
+
+### **Branching Logic**
+
+-   Gather relevant insight and bypass unneeded options
+
+## Teaching Applications {.teaching-card}
+
+```{=html}
+<iframe class = slide-deck src = "https://farmingdale.qualtrics.com/jfe/form/SV_cLJzrmBSa6jmegK?block_show=teach" width = 800px height = 800px></iframe>
+```
+
+## Teaching Applications {.teaching-card}
+
+### **Embedded Data**
+
+-   Automatically record quiz scores or confidence levels.
+
+-   Embedded data can reduce human error in variable naming or tracking
+    participant IDs.
+
+-   ![](images/embed.png)
+
+# **Part II - Research Applications: Turning Surveys into Experiments** {background-color="#2A9D8F" data-background-color="#2A9D8F" style="color: white;"}
+
+## Research Applications {.research-card}
+
+### **Random Assignment**
+
+-   Randomly send participants to conditions.
+
+-   ![](images/conditions.png)
+
+## Research Applications {.research-card}
+
+### **Random Assignment**
+
+```{=html}
+<iframe class = slide-deck src = "https://farmingdale.qualtrics.com/jfe/form/SV_cLJzrmBSa6jmegK?block_show=conditions" width = 800px height = 800px></iframe>
+```
+
+## Research Applications {.research-card}
+
+### **Display Logic**
+
+-   Control stimuli presentation or manipulations.
+
+-   Compute total scores automatically.
+
+-   ![](images/score.png)
+
+## Research Applications {.research-card}
+
+### **Embedded Data**
+
+-   Store participant metadata (e.g., ID, condition).
+
+## Research Applications {.research-card}
+
+### **Display Logic**
+
+```{=html}
+<iframe class = slide-deck src = "https://farmingdale.qualtrics.com/jfe/form/SV_cLJzrmBSa6jmegK?block_show=research" width = 800px height = 800px></iframe>
+```
+
+## **Mini Challenge:**
+
+> Create a two-condition experiment using branching and embedded data.
+
+# **The Bridge – Connecting Teaching & Research**
+
+## Two Worlds, One Platform
+
+| **Feature**   | **Teaching Use**        | **Research Use**              |
+|---------------|-------------------------|-------------------------------|
+| Piping        | Personalized feedback   | Stimulus manipulation         |
+| Branching     | Adaptive quizzes        | Condition control             |
+| Embedded Data | Track learning outcomes | Record experimental variables |
+| Scoring       | Auto-grading            | Scale computation             |
+
+## **Wrap-Up & Resources**
+
+::: container
+{{< fa brands github size=5x title="GitHub Repository" >}}
+
+{{< fa comments size=5x >}}
+
+{{< fa file size=5x >}}
+
+{{< fa envelope size=5x >}}
+:::
+
+-   [Qualtrics
+    Documentation](https://www.qualtrics.com/support/survey-platform/getting-started/qualtrics-topics-a-z/)
+
+-   Feedback QR code (naturally, using a Qualtrics survey!)

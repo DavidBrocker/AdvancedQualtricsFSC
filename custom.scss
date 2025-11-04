@@ -1,0 +1,198 @@
+/* ────────────────────────────────
+   Qualtrics Workshop Theme: "Insight"
+   Author: Dave Brocker
+   ──────────────────────────────── */
+
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap";
+
+/*-- scss:defaults --*/
+$background: #F9FAFB;
+$text: #1A1A1A;
+$primary: #7C83FD;
+$accent-teaching: #F4A261;
+$accent-research: #2A9D8F;
+$muted: #555;
+$highlight: #E76F51;
+
+
+$selected-text-color: $highlight;
+
+/*-- scss:rules --*/
+.reveal {
+  background-color: $background;
+  color: $text;
+  font-family: 'Inter', sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Poppins', sans-serif;
+  color: $primary;
+  letter-spacing: -0.02em;
+}
+
+.reveal p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: $text;
+}
+
+/* ----- Links ----- */
+.reveal a {
+  color: $primary;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.reveal a:hover {
+  border-color: $primary;
+  color: darken($primary, 10%);
+}
+
+/* ----- Teaching Cards ----- */
+.teaching-card {
+  border-left: 6px solid $accent-teaching;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ----- Teaching Section Titles ----- */
+.reveal section.teaching-card h2,
+.reveal section.teaching-card h3 {
+  color: darken($accent-teaching, 20%);
+}
+
+/* ----- Research Cards ----- */
+.research-card {
+  border-left: 6px solid $accent-research;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ----- Research Section Titles ----- */
+.reveal section.research-card h2,
+.reveal section.research-card h3 {
+  color: darken($accent-research, 20%);
+}
+
+/* ----- Tables & Code Blocks ----- */
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.reveal table th {
+  background: $primary;
+  color: white;
+  text-align: left;
+  padding: 0.6em;
+}
+
+.reveal table td {
+  padding: 0.6em;
+  border-top: 1px solid #ddd;
+}
+
+.reveal code {
+  background: rgba($highlight, 0.1);
+  color: $highlight;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* ----- List Spacing Fix ----- */
+.reveal ul, 
+.reveal ol {
+  margin-left: 2rem;      /* ensures numbering isn’t clipped */
+  padding-left: 0.5rem;   /* small interior buffer */
+  list-style-position: outside;
+}
+
+.reveal li {
+  margin-bottom: 0.5rem;  /* adds breathing room between items */
+  line-height: 1.6;
+}
+
+.reveal ul li::marker {
+  font-weight: 600;
+  color: $primary;        /* matches theme color */
+}
+
+/* ----- Callouts ----- */
+.callout {
+  border-left: 4px solid $primary;
+  background: rgba($primary, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+
+/* Teaching vs Research Highlights */
+.teaching {
+  color: $accent-teaching;
+  font-weight: 600;
+}
+
+.research {
+  color: $accent-research;
+  font-weight: 600;
+}
+
+/* ----- Footer ----- */
+.reveal .footer {
+  font-size: 0.9em;
+  color: $muted;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem auto;
+}
+
+.container i {
+  color: #444;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container i:hover {
+  color: #b22222; /* or your accent */
+  transform: scale(1.2);
+}
+
+/* ----- iFrame ----- */
+.slide-deck {
+  border: 3px solid #d8dee9;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.slide-deck:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  color: #fff !important;
+}
+
+.quarto-title-affiliation {
+  color: #fff !important;
+}
+
+.reveal .footer > * {
+	color: #fff;
+}
